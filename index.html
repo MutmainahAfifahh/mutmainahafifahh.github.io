@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<header>
+    <nav>
+        <h2>My Portfolio</h2>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <ul class="menu">
+            <li><a href="#Beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section id="Beranda" class="Beranda">
+
+    <div class="Beranda-text">
+        <h1>Hallo Saya Afifah Mutmainah</h1>
+        <h2>dan saya adalah mahasiswa Teknik Informatika</h2>
+
+        <h2>
+            Pengembang aplikasi dan web yang fokus pada desain modern,
+            performa tinggi, serta solusi berbasis teknologi.
+        </h2>
+
+        <div class="buttons">
+
+            <a href="files/CV.pdf" download class="btn">
+                Download CV
+            </a>
+
+
+            <a href="#project" class="btn-outline">
+                Explore My Projects
+            </a>
+        </div>
+    </div>
+
+    <div class="Beranda-image">
+        <div class="card">
+            <img src="images/Foto Formal.jpeg" alt="profile">
+        </div>
+    </div>
+
+</section>
+
+<!-- Tentang Saya -->
+<section id="tentang">
+    <div class="tentang-container">
+
+        <!-- KIRI -->
+        <div class="tentang-text">
+            <h2>Tentang Saya</h2>
+            <p>
+                Halo, perkenalkan saya Afifah Mutmainah, mahasiswa S1 Teknik Informatika 
+                di Universitas Duta Bangsa Surakarta dengan fokus di bidang pemrograman 
+                dan pengembangan website. Saya memiliki ketertarikan pada teknologi digital, 
+                khususnya Web Development dan UI/UX Design.
+            </p>
+
+            <p>
+                Saya adalah pribadi yang teliti, disiplin, bertanggung jawab, 
+                dan memiliki semangat belajar yang tinggi. Selain mampu bekerja 
+                secara mandiri, saya juga dapat bekerja sama dengan baik dalam tim.
+            </p>
+
+            <p>
+                Dengan kemampuan dan minat yang saya miliki, saya ingin terus 
+                mengembangkan keterampilan serta memperoleh pengalaman langsung 
+                di dunia kerja dan industri teknologi.
+            </p>
+        </div>
+
+        <!-- KANAN -->
+        <div class="tentang-info">
+            <h3>Profil</h3>
+
+            <div class="info-card">
+            <h4>Pendidikan</h4>
+
+            <div class="edu-item">
+                <span>2020 - 2023</span>
+                <p>SMK Negeri 1 Boyolali<br>Teknik Komputer dan Jaringan (TKJ)</p>
+            </div>
+
+            
+            <div class="edu-item">
+                <span>2023 - Sekarang</span>
+                <p>Universitas Duta Bangsa Surakarta<br>S1 Teknik Informatika</p>
+            </div>
+        </div>
+
+            <div class="info-card">
+                <h4>Domisili</h4>
+                <p>Klaten, Jawa Tengah</p>
+            </div>
+
+            <div class="info-card">
+                <h4>Status</h4>
+                <p>Mahasiswa Aktif</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <div class="skills">
+
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+
+            <!-- HARD SKILL -->
+        <div class="skills-box">
+            <h4>Hard Skill</h4>
+
+            <div class="skill-item">
+                <p><i class="fa-brands fa-figma"></i> UI/UX Design (Figma)</p>
+            </div>
+
+            <div class="skill-item">
+                <p><i class="fa-solid fa-code"></i> Pengembangan Website Dasar</p>
+            </div>
+
+            <div class="skill-item">
+                <p><i class="fa-solid fa-database"></i> Pengelolaan Basis Data (MySQL, Supabase)</p>
+            </div>
+        </div>
+
+        <!-- SOFT SKILL -->
+        <div class="skills-box">
+            <h4>Soft Skill</h4>
+
+            <div class="skill-item">
+                <p><i class="fa-solid fa-check"></i> Teliti</p>
+            </div>
+
+            <div class="skill-item">
+                <p><i class="fa-solid fa-clock"></i> Disiplin</p>
+            </div>
+
+            <div class="skill-item">
+                <p><i class="fa-solid fa-shield"></i> Bertanggung Jawab</p>
+            </div>
+
+            <div class="skill-item">
+                <p><i class="fa-solid fa-lightbulb"></i> Problem Solving</p>
+            </div>
+
+            <div class="skill-item">
+                <p><i class="fa-solid fa-comments"></i> Komunikasi</p>
+            </div>
+
+            <div class="skill-item">
+                <p><i class="fa-solid fa-users"></i> Kerja Tim</p>
+            </div>
+        </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Project -->
+<section id="project">
+    <div class="project">
+
+        <h2>Project</h2>
+
+        <div class="project-container">
+
+            <!-- Card 1 -->
+            <a href="hotel-project.html" class="project-card">
+
+                <img src="images/cover.png" alt="Luxury Hotel">
+
+                <h3>Website Luxury Hotel</h3>
+
+                <p id="hotelText">
+                    Luxury Hotel adalah website sistem reservasi kamar hotel 
+                    yang memungkinkan pelanggan melihat informasi kamar dan 
+                    melakukan reservasi secara online...
+                </p>
+
+            </a>
+
+            <!-- Card 2 -->
+            <a href="catatan.html" class="project-card">
+
+                <img src="images/Logo catatan lanscape.jpeg" alt="Simple Daily Notes">
+
+                <h3>Aplikasi Simple Daily Notes</h3>
+
+                <p>
+                    Simple Daily Notes adalah aplikasi mobile Android yang dirancang 
+                    untuk membantu pengguna mengelola catatan harian...
+                </p>
+
+            </a>
+
+            <!-- Card 3 -->
+            <a href="klasifikasi ui.html" class="project-card">
+
+                <img src="images/klasifikasi 2.png" alt="klasifikasi ui">
+
+                <h3>UI GuessMyFruit </h3>
+
+                <p>
+                    Merancang UI GuesMyFruit, sebuah sistem klasifikasi buah berbasis web 
+                    yang menggunakan CNN dan LLM...
+                </p>
+
+            </a>
+
+            <!-- Card 4 -->
+            <a href="klasifikasiweb.html" class="project-card">
+
+                <img src="images/klasifikasiweb (1).png" alt="GuessMyFruit">
+
+                <h3> GuessMyFruit </h3>
+
+                <p>
+                    GuessMyFruit adalah web yang bisa mengidentifikasi jenis buah hanya dari 
+                    gambar yang diunggah pengguna. Website ini menggabungkan CNN untuk...
+                </p>
+
+            </a>
+
+            <!-- Card 5 -->
+            <a href="tokosepatu.html" class="project-card">
+
+                <img src="images/sepatu (1).png" alt="tokosepatu">
+
+                <h3> Niku Shoes </h3>
+
+                <p>
+                    Niku Shoes adalah aplikasi berbasis web yang dirancang untuk membantu operasional toko sepatu 
+                    menjadi lebih terstruktur dan...
+                </p>
+
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <div class="contact">
+        <h2>Contact Me</h2>
+
+        <p class="contact-text">
+            Mari terhubung melalui platform berikut
+        </p>
+
+        <div class="contact-container">
+
+            <a href="mailto:mutmainahaja4121@gmail.com" class="contact-card">
+                <i class="fa-solid fa-envelope"></i> Email
+            </a>
+
+            <a href="https://www.instagram.com/affhmtminh" target="_blank" class="contact-card">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+
+            <a href="https://www.linkedin.com/in/afifah-mutmainah" target="_blank" class="contact-card">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+
+            <a href="https://github.com/MutmainahAfifahh" target="_blank" class="contact-card">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Portfolio Afifah Mutmainah</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

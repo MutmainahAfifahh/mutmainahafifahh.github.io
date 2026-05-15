@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel Project</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<header>
+    <nav>
+        <h2>My Portfolio</h2>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <ul class="menu">
+            <li><a href="index.html#Beranda">Beranda</a></li>
+            <li><a href="index.html#tentang">Tentang</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#project">Project</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- DETAIL PROJECT -->
+<section class="detail-project">
+
+    <h1>Website Luxury Hotel</h1>
+
+    <!-- PREVIEW SLIDER -->
+    <div class="main-image" data-images='[
+        "images/hotel (1).png",
+        "images/hotel (2).png",
+        "images/hotel (3).png",
+        "images/hotel (4).png",
+        "images/hotel (5).png",
+        "images/hotel (6).png",
+        "images/hotel (7).png",
+        "images/hotel (8).png",
+        "images/hotel (9).png",
+        "images/hotel (10).png"
+    ]'>
+
+        <button class="slider-btn prev" onclick="prevImage()">❮</button>
+
+        <img id="preview" src="images/hotel (1).png">
+
+        <button class="slider-btn next" onclick="nextImage()">❯</button>
+
+    </div>
+
+    <!-- THUMBNAIL (opsional, bisa dihapus kalau mau full otomatis nanti) -->
+    <div class="thumbnail-container">
+        <img src="images/hotel (1).png" onclick="changeImage(0)">
+        <img src="images/hotel (2).png" onclick="changeImage(1)">
+        <img src="images/hotel (3).png" onclick="changeImage(2)">
+        <img src="images/hotel (4).png" onclick="changeImage(3)">
+        <img src="images/hotel (5).png" onclick="changeImage(4)">
+        <img src="images/hotel (6).png" onclick="changeImage(5)">
+        <img src="images/hotel (7).png" onclick="changeImage(6)">
+        <img src="images/hotel (8).png" onclick="changeImage(7)">
+        <img src="images/hotel (9).png" onclick="changeImage(8)">
+        <img src="images/hotel (10).png" onclick="changeImage(9)">
+    </div>
+
+    <!-- DESKRIPSI -->
+    <div class="project-description">
+
+        <h2>Tentang Project</h2>
+
+        <p>
+        Luxury Hotel merupakan aplikasi berbasis web yang dirancang untuk mempermudah proses reservasi kamar hotel 
+        secara online. Pengguna dapat melihat informasi kamar beserta fasilitasnya, melakukan reservasi, 
+        serta memantau riwayat pemesanan tanpa harus datang langsung ke hotel. Sistem ini juga dilengkapi 
+        fitur admin berupa dashboard untuk mengelola data kamar, data reservasi, dan daftar pengguna secara lebih efisien 
+        dan terorganisir.
+        </p>
+
+        <div class="project-tags">
+            <div class="tag">Project Tim</div>
+            <div class="tag">PHP</div>
+            <div class="tag">MySQL</div>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

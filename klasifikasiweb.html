@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessMyFruit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2>My Portfolio</h2>
+        <div class="hamburger" id="hamburger">☰</div>
+        <ul class="menu" id="menu">
+            <li><a href="index.html#Beranda">Beranda</a></li>
+            <li><a href="index.html#tentang">Tentang</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#project">Project</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="detail-project">
+
+    <h1>Website GuessMyFruit</h1>
+
+    <!-- PREVIEW SLIDER - SUDAH DIPERBAIKI -->
+    <div class="main-image" 
+        data-images='[
+            "images/klasifikasiweb (1).png",
+            "images/klasifikasiweb (2).png",
+            "images/klasifikasiweb (3).png",
+            "images/klasifikasiweb (4).png",
+            "images/klasifikasiweb (5).png"
+        ]'>
+
+        <button class="slider-btn prev" onclick="prevImage()">❮</button>
+
+        <img id="preview" src="images/klasifikasiweb (1).png" alt="Preview Project">
+        
+        <button class="slider-btn next" onclick="nextImage()">❯</button>
+    </div>
+
+<!-- THUMBNAIL (opsional, bisa dihapus kalau mau full otomatis nanti) -->
+    <div class="thumbnail-container">
+        <img src="images/klasifikasiweb (1).png" onclick="changeImage(0)">
+        <img src="images/klasifikasiweb (2).png" onclick="changeImage(1)">
+        <img src="images/klasifikasiweb (3).png" onclick="changeImage(2)">
+        <img src="images/klasifikasiweb (4).png" onclick="changeImage(3)">
+        <img src="images/klasifikasiweb (5).png" onclick="changeImage(4)">
+    </div>
+
+    <!-- DESKRIPSI -->
+    <div class="project-description">
+        <h2>Tentang Project</h2>
+        <p>
+            GuessMyFruit adalah web yang bisa mengidentifikasi jenis buah hanya dari gambar yang diunggah pengguna. 
+            Website ini menggabungkan CNN untuk mengenali buah, Gemini LLM untuk menampilkan informasi nutrisi serta 
+            khasiatnya, dan RESTful API sebagai penghubung antar sistemnya. 
+            Pengguna cukup mengunggah gambar buah dan sistem akan langsung memberikan hasil prediksi 
+            beserta informasi lengkapnya secara real-time.
+        </p>
+
+        <div class="project-tags">
+            <div class="tag">Project Tim</div>
+            <div class="tag">CNN</div>
+            <div class="tag">GEMINI LLM</div>
+            <div class="tag">RESTful API</div>
+        </div>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

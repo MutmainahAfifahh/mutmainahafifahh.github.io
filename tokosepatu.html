@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niku Shoes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2>My Portfolio</h2>
+        <div class="hamburger" id="hamburger">☰</div>
+        <ul class="menu" id="menu">
+            <li><a href="index.html#Beranda">Beranda</a></li>
+            <li><a href="index.html#tentang">Tentang</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#project">Project</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="detail-project">
+
+    <h1>Website Niku Shoes</h1>
+
+    <!-- PREVIEW SLIDER - SUDAH DIPERBAIKI -->
+    <div class="main-image" 
+        data-images='[
+            "images/sepatu (1).png",
+            "images/sepatu (2).png",
+            "images/sepatu (3).png",
+            "images/sepatu (4).png",
+            "images/sepatu (5).png",
+            "images/sepatu (6).png",
+            "images/sepatu (7).png",
+            "images/sepatu (8).png",
+            "images/sepatu (9).png"
+        ]'>
+
+        <button class="slider-btn prev" onclick="prevImage()">❮</button>
+
+        <img id="preview" src="images/sepatu (1).png" alt="Preview Project">
+        
+        <button class="slider-btn next" onclick="nextImage()">❯</button>
+    </div>
+
+<!-- THUMBNAIL (opsional, bisa dihapus kalau mau full otomatis nanti) -->
+    <div class="thumbnail-container">
+        <img src="images/sepatu (1).png" onclick="changeImage(0)">
+        <img src="images/sepatu (2).png" onclick="changeImage(1)">
+        <img src="images/sepatu (3).png" onclick="changeImage(2)">
+        <img src="images/sepatu (4).png" onclick="changeImage(3)">
+        <img src="images/sepatu (5).png" onclick="changeImage(4)">
+        <img src="images/sepatu (6).png" onclick="changeImage(5)">
+        <img src="images/sepatu (7).png" onclick="changeImage(6)">
+        <img src="images/sepatu (8).png" onclick="changeImage(7)">
+        <img src="images/sepatu (9).png" onclick="changeImage(8)">
+    </div>
+
+    <!-- DESKRIPSI -->
+    <div class="project-description">
+        <h2>Tentang Project</h2>
+        <p>
+            Niku Shoes adalah aplikasi berbasis web yang dirancang untuk membantu operasional toko sepatu 
+            menjadi lebih terstruktur dan terkomputerisasi, karena pengelolaan data secara manual rentan menyebabkan
+            kesalahan pencatatan dan kurang efisien. Melalui sistem ini, admin dapat mengelola seluruh data toko 
+            mulai dari produk, supplier, operator, hingga transaksi penjualan dalam satu platform yang terintegrasi.
+        </p>
+
+        <div class="project-tags">
+            <div class="tag">Project Individu</div>
+            <div class="tag">PHP</div>
+            <div class="tag">HTML</div>
+            <div class="tag">MySQL</div>
+            <div class="tag">JavaScript</div>
+            <div class="tag">Bootstrap</div>
+            <div class="tag">CSS</div>
+            <div class="tag">jquery</div>
+        </div>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

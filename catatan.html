@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Daily Notes Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2>My Portfolio</h2>
+        <div class="hamburger" id="hamburger">☰</div>
+        <ul class="menu" id="menu">
+            <li><a href="index.html#Beranda">Beranda</a></li>
+            <li><a href="index.html#tentang">Tentang</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#project">Project</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="detail-project">
+
+    <h1>Aplikasi Simple Daily Notes</h1>
+
+    <!-- PREVIEW SLIDER - SUDAH DIPERBAIKI -->
+    <div class="main-image" 
+         data-images='[
+            "images/Logo catatan potrait.jpeg",
+            "images/Catatan (1).jpg",
+            "images/Catatan (2).jpg",
+            "images/Catatan (3).jpg",
+            "images/Catatan (4).jpg",
+            "images/Catatan (5).jpg",
+            "images/Catatan (6).jpg",
+            "images/Catatan (7).jpg",
+            "images/Catatan (8).jpeg"
+         ]'>
+
+        <button class="slider-btn prev" onclick="prevImage()">❮</button>
+        <img id="preview" src="images/Logo catatan potrait.jpeg" alt="Preview Project">
+        <button class="slider-btn next" onclick="nextImage()">❯</button>
+    </div>
+
+    <!-- THUMBNAIL - Dikosongkan (akan diisi otomatis oleh JS) -->
+    <div class="thumbnail-container"></div>
+
+    <!-- DESKRIPSI -->
+    <div class="project-description">
+        <h2>Tentang Project</h2>
+        <p>
+            Simple Daily Notes adalah aplikasi mobile Android yang dirancang 
+            untuk membantu pengguna mengelola catatan harian dengan fitur autentikasi akun, 
+            tambah/edit/hapus catatan, penyematan catatan penting, pemilihan tema tampilan, 
+            serta manajemen profil pengguna. Data disimpan secara aman menggunakan layanan backend berbasis cloud.
+        </p>
+
+        <div class="project-tags">
+            <div class="tag">Project Tim</div>
+            <div class="tag">Flutter</div>
+            <div class="tag">Supabase</div>
+        </div>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

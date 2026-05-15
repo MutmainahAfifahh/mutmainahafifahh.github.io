@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessMyFruit Project</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<header>
+    <nav>
+        <h2>My Portfolio</h2>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html#Beranda">Beranda</a></li>
+            <li><a href="index.html#tentang">Tentang</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#project">Project</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="detail-project">
+
+    <h1>UI GuessMyFruit</h1>
+
+    <!-- PREVIEW -->
+    <div class="main-imagepreview">
+
+        <img id="preview" src="images/klasifikasi.png">
+
+    </div>
+
+    <!-- THUMBNAIL -->
+    <div class="thumbnail-container">
+
+        <img src="images/klasifikasi.png" onclick="changeImage(0)">
+
+    </div>
+
+    <!-- DESKRIPSI -->
+    <div class="project-description">
+
+        <h2>Tentang Project</h2>
+
+        <p>
+            Merancang UI GuessMyFruit, sebuah sistem klasifikasi buah berbasis web yang menggunakan CNN dan LLM. 
+            Desain antarmuka dirancang dengan tampilan yang bersih dan ramah pengguna, mencakup halaman beranda, 
+            informasi teknologi, serta halaman klasifikasi untuk upload gambar buah dan menampilkan hasil identifikasi 
+            beserta informasi khasiat kesehatannya secara real-time.
+        </p>
+
+    <div class="project-tags">
+
+        <div class="tag">Figma</div>
+
+    </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
