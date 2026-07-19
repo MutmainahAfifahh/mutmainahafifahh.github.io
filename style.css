@@ -713,6 +713,7 @@ footer{
 
     .contact-card{
         margin-right: 10px;
+        margin-left: -5px;
         font-size:13px;
         padding:5px;
     }
