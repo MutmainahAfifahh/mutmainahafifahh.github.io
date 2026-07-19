@@ -784,6 +784,7 @@ footer{
     }
 
     .contact-card{
+        margin-right: 0px;
         font-size:15px;
         padding:12px;
     }
