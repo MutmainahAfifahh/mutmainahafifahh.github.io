@@ -17,12 +17,10 @@ header{
     background:transparent;
     color:white;
     padding:0;
-
     position:fixed;
     top:0;
     left:0;
     width:100%;
-
     z-index:800;
     backdrop-filter:blur(8px);
 }
@@ -52,7 +50,6 @@ nav{
     font-size:20px;
     cursor:pointer;
     color:white;
-
     position:relative;
     z-index:999;
 }
@@ -150,7 +147,6 @@ nav{
     background:rgba(255,255,255,0.1);
     padding:25px;
     border-radius:15px;
-
     max-height:300px;
     overflow-y:auto;
     margin-top:70px;
@@ -232,11 +228,9 @@ nav{
     flex:1;
     min-width:300px;
     max-width:500px;
-
     background:rgba(255,255,255,0.08);
     padding:20px;
     border-radius:15px;
-
     border:1px solid rgba(255,255,255,0.1);
 }
 
@@ -286,10 +280,8 @@ nav{
     display:flex;
     justify-content:flex-start;
     gap:20px;
-
     overflow-x:auto;
     scroll-behavior:smooth;
-
     padding:15px 10px 10px;
 }
 
@@ -299,18 +291,14 @@ nav{
     border:1px solid rgba(255,255,255,0.1);
     border-radius:20px;
     margin-top:5px;
-
     width:350px;
     min-height:370px;
     padding:15px;
-
     text-decoration:none;
     color:white;
     font-size:18px;
-
     transition:0.3s;
     backdrop-filter:blur(10px);
-
     flex-shrink:0;
 }
 
@@ -344,12 +332,9 @@ nav{
 .project-card img{
     width:100%;
     aspect-ratio:16/10;
-
     object-fit:cover;
-
     border-radius:15px;
     margin-bottom:15px;
-
     background:rgba(255,255,255,0.05);
 }
 
@@ -371,7 +356,6 @@ nav{
     position:relative;
     max-width:700px;
     margin:auto;
-
     display:flex;
     justify-content:center;
     align-items:center;
@@ -380,43 +364,36 @@ nav{
 .main-image img{
     width:100%;
     max-height:500px;
-
     object-fit:contain;
-
     border-radius:20px;
-
     background:rgba(255,255,255,0.05);
 }
 
-.main-imagepreview{
+/* Perbaikan 1: Pemisahan class menggunakan spasi agar sinkron */
+.main-image .preview{
     position: relative;
     max-width: 600px;
     margin: auto;
-
-    height: 370px;          /* tinggi box */
-    overflow-y: auto;       /* scroll vertikal */
-
+    height: 370px;          
+    overflow-y: auto;       
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* mulai dari atas */
-
+    align-items: flex-start; 
     scroll-behavior: smooth;
 }
 
-/* gambar */
-.main-imagepreview img{
+.main-image .preview img{
     width: 100%;
     height: auto;           
     object-fit: unset;      
     border-radius: 20px;
 }
 
-/* scrollbar biar estetik */
-.main-imagepreview::-webkit-scrollbar{
+.main-image .preview::-webkit-scrollbar{
     width: 6px;
 }
 
-.main-imagepreview::-webkit-scrollbar-thumb{
+.main-image .preview::-webkit-scrollbar-thumb{
     background: rgba(255,255,255,0.4);
     border-radius: 10px;
 }
@@ -426,41 +403,28 @@ nav{
     position:absolute;
     top:50%;
     transform:translateY(-50%);
-
     background:rgba(0,0,0,0.4);
     border:none;
-
     color:white;
-
     width:45px;
     height:45px;
-
     border-radius:50%;
     cursor:pointer;
-
     font-size:20px;
+    z-index: 10; /* Perbaikan 3: Ditambah z-index agar panah tidak tenggelam */
 }
 
-.prev{
-    left:15px;
-}
-
-.next{
-    right:15px;
-}
+.prev{ left:15px; }
+.next{ right:15px; }
 
 /* THUMBNAIL */
 .thumbnail-container{
     display:flex;
     gap:15px;
-
     overflow-x:auto;
-
     margin-top:20px;
     padding-bottom:10px;
-
     justify-content:flex-start;
-
     scrollbar-width:none;
 }
 
@@ -472,21 +436,19 @@ nav{
 .thumbnail-container img{
     width:120px;
     height:80px;
-
     object-fit:cover;
-
     border-radius:12px;
-
     cursor:pointer;
-
     transition:0.3s;
-
     opacity:0.7;
 }
 
-.thumbnail-container img:hover{
+/* Menambahkan penanda visual saat thumbnail aktif diklik */
+.thumbnail-container img:hover,
+.thumbnail-container img.active {
     opacity:1;
     transform:scale(1.05);
+    border: 2px solid #36bfc9;
 }
 
 /* DESKRIPSI */
@@ -504,16 +466,11 @@ nav{
 .tag{
     font-size:16px;
     line-height:1.5;
-
     background:rgba(255,255,255,0.08);
     border:1px solid rgba(255,255,255,0.1);
-
     border-radius:20px;
-
     padding:9px 15px;
-
     color:white;
-
     backdrop-filter:blur(7px);
 }
 
@@ -525,7 +482,6 @@ nav{
     margin-bottom: -90px;
 }
 
-
 .contact h2{
     font-size:32px;
     margin-bottom:10px;
@@ -536,34 +492,25 @@ nav{
     margin-bottom:30px;
 }
 
-/* CONTAINER */
 .contact-container{
     display:grid;
     grid-template-columns:repeat(4, 1fr);
-
     gap:20px;
-
     max-width:900px;
     margin:auto;
 }
 
-/* CARD */
 .contact-card{
     background:rgba(255,255,255,0.08);
     border:1px solid rgba(255,255,255,0.1);
-
     padding:14px 20px;
     border-radius:18px;
-
     text-decoration:none;
     color:white;
-
     font-size:17px;
     font-weight:bold;
-
     transition:0.3s;
     backdrop-filter:blur(10px);
-
     min-width:160px;
     display:flex;
     align-items:center;
@@ -574,19 +521,14 @@ nav{
 footer{
     text-align:center;
     padding:3px 3px;
-
     background:rgba(255,255,255,0.08);
     backdrop-filter:blur(12px);
-
     border-top:1px solid rgba(255,255,255,0.15);
-
     box-shadow:0 -5px 10px rgba(0,0,0,0.15);
 }
 
-
 /* ================= RESPONSIVE ================= */
 @media (max-width:768px){
-
     nav{
         flex-wrap:wrap;
         justify-content:space-between;
@@ -594,7 +536,6 @@ footer{
         padding:15px 20px;
     }
 
-    /* HAMBURGER */
     .hamburger{
         display:block !important;
         font-size:32px;
@@ -607,16 +548,12 @@ footer{
     .menu{
         display:none;
         flex-direction:column;
-
         width:100%;
-
         text-align:center;
         gap:20px;
-
         margin-top:15px;
         padding:20px 0;
-
-        background:rgba(0,0,0,0.4);
+        background:rgba(27, 59, 63, 0.95); /* Perbaikan 2: Background dibuat lebih gelap agar teks putih kontras */
         border-radius:10px;
     }
 
@@ -644,7 +581,7 @@ footer{
         order:1;
     }
 
-    /* HIDE FOTO */
+    /* FOTO SENGAJA DIHILANGKAN DI HP (Sesuai Preferensi Anda) */
     .Beranda-image,
     .Beranda-image .card,
     .Beranda-image img{
@@ -674,7 +611,6 @@ footer{
         padding:12px 20px;
     }
 
-    /* TENTANG */
     .tentang-container{
         flex-direction:column;
     }
@@ -683,10 +619,10 @@ footer{
         width:100%;
     }
 
-    /* SKILLS */
     .skills h2{
         margin-top: -30px;
     }
+    
     .skills-container{
         gap:10px;
     }
@@ -706,7 +642,6 @@ footer{
         line-height:1.4;
     }
 
-    /* FOTO PROJECT */
     .project-card img{
         aspect-ratio:16/10;
         object-fit:cover;
@@ -715,34 +650,30 @@ footer{
     .main-image img{
         width:100%;
         max-height:300px;
-
         object-fit:contain;
-
         border-radius:15px;
     }
 
-    .main-imagepreview{
-    max-width: 100%;
-    height: 75vh;        /* pakai tinggi layar HP */
-    overflow-y: auto;
+    /* Perbaikan 1 di Mobile */
+    .main-image .preview{
+        max-width: 100%;
+        height: 75vh;        
+        overflow-y: auto;
+        padding: 12px;        
+    }
 
-    padding: 12px;        /* biar nggak mepet */
-}
+    .main-image .preview img{
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
 
-.main-imagepreview img{
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-}
-
-    /* BUTTON */
     .slider-btn{
         width:38px;
         height:38px;
         font-size:16px;
     }
 
-    /* THUMBNAIL */
     .thumbnail-container{
         gap:10px;
         padding:5px;
@@ -753,7 +684,6 @@ footer{
         height:65px;
     }
 
-    /* DESKRIPSI */
     .project-description{
         margin-top:30px;
     }
@@ -767,13 +697,11 @@ footer{
         line-height:1.7;
     }
 
-    /* TAG */
     .tag{
         font-size:13px;
         padding:7px 12px;
     }
 
-    /* CONTACT MOBILE */
     .contact{
         padding-top:20px;
     }
